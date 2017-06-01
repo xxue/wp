@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <?php
+
+    echo "<p>\"published on \"</>";
+    date_default_timezone_set('UTC');
+    echo date('h:i a, l F jS Y e');
+    /* Echos the date
+                h : 12 hr format
+                H : 24 hr format
+                i : Minutes
+                s : Seconds
+                u : Microseconds
+                a : Lowercase am or pm
+                l : Full text for the day
+                F : Full text for the month
+                j : Day of the month
+                S : Suffix for the day st, nd, rd, etc.
+                Y : 4 digit year
+            */
+
+  // put line breaks
+    echo $usersName . ' lives at </br>';
+
+  //string go over multiple lines
+    $str = <<<EOD
+    the name is $usersName
+    EOD;
+    echo $str;
+
+//define constant
+//calculation
+    define('PI', 3.1415926);
+    echo "The value of PI is " . PI;
+    echo "</br> 5 / 2 = " . (integer)(5 / 2);
+    echo "</br> 5 / 2 = " . (double)(5/2); //2 decimal
+
+    $a = 5;
+    echo "++a = " . ++$a . "</br>"; //6
+    echo "a++ = " . $a++ . "</br>"; //6
+    echo $a; //7
+
+    echo $a += 10; //save a as 15
+    // -=, *=, /=, %=
+    // &&,logical operators
+    // ==, !=, ===, equal and same type, !==, check if equal or same type
+
+//if, switch, while
+    if ( 5 == 10) {
+      echo '5 = 10';
+    } else {
+      echo '5 != 10';
+    }
+
+    $b = 10;
+    $c = 20;
+    if (($b > 10) && ($c < 30 )){
+      echo 'discount';
+    }elseif (($b > 5) || ($c < 20)) {
+      echo 'more discount';
+    }elseif( (!($b<20)) || (!($c < 40))){
+      echo 'no discount';
+    }
+
+    // condition ? value if true : value if false
+    $t = (15 > 10) ? 15 : 10;
+    echo $t
+
+    switch($name){
+      case "Derek" :
+        echo "hellp Derek";
+        break; //not check after this
+
+      default :
+      echo "Hello";
+      break;
+    }
+
+    // while loop, print out 1-20
+    $num = 0;
+    while ($num < 20){
+      echo ++$num . ',';
+    }
+
+    //For loop
+    for ($num = 1; $num <= 20; $num++){
+      echo $num;
+      if ($num != 20){
+          eco ', ';
+        }else{
+          break; //stop executing the loop
+        }
+      }
+
+//array, foreach block, object
+sort($yourArray);
+rsort($yourArray); //reverse sort
+sort($yourArray, SORT_NUMERIC);
+sort($yourArray, SORT_STRING);
+asort($yourArray); //sort with keys
+ksort($yourArray); //sort by key
+
+//trim string and print out length
+echo strlen($samplestring) . "</br>";
+echo strlen(ltrim($randString)) . "</br>";
+echo strlen(rtrim($randString)) . "</br>";
+echo strlen(trim($randString)) . "</br>";
+
+    $array = array('joy', 'willow', 'ivy');
+    echo $array[0];
+    $array[4] = steve;
+
+    //join array
+    $arrayjoin = $array1 + $array2;
+
+    //print out items in array
+    foreach($array as $listname) {
+      echo $listname . ', ';
+    }
+
+    //print out key value pair in object(array)
+    $faces = array('Name' => $username, 'City' => $city);
+    foreach($faces as $key => $value) {
+      echo $key . ' : ' . $value;
+    }
+
+    //multi-dimensional array, loop through row and column
+    $multiDarray = array(array('apple', 'banana', 'pineapple'),
+                          array('Sue', '124 Main', '15222'),
+                          array(('Bob', '125 Main', '15212')));
+
+    for($row = 0; $row < 3; $row++){
+      for($col = 0; $col < 3; $col++){
+        echo $multiDarray[$row][$col] . ', ';
+      }
+      echo '</br>';
+    }
+
+//print instead of echo
+    printf ("bla is %s ", $randString); //s is defined after
+    $decimalNum = 2.3456;
+    printf ("decimal num = %.2f </br>", $decimalNum); //2 decimal
+
+    // Other conversion codes
+    // b : integer to binary
+    // c : integer to character
+    // d : integer to decimal
+    // f : double to float
+    // o : integer to octal
+    // s : string to string
+    // x : integer to hexadecimal
+
+//uppercase
+    echo strtoupper($randString) . "</br>";
+    echo strtolower($randString) . "</br>";
+    echo ucfirst($randString) . "</br>";
+
+//string to array, back
+//(what separates, string, max num);
+  $arrayForString = explode(' ', $randString, 2);
+//substring
+  $partOfString = substr("Random String", 0, 6);
+
+// function
+function samplefun($a,$b){
+  return $a + $b;
+}
+echo "3 + 5 is " . samplefun(3,5);
+/*
+*/
+//
+     ?>
+
+  </body>
+</html>

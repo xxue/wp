@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="assets/img/logo/ECFC.jpg">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <title>ECFC</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Fontawesome icons -->
+    <link rel="stylesheet" href="assets/css/font-awesome/css/font-awesome.min.css" >
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i" rel="stylesheet">
+    <!--  -->
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+
+<body>
+    <header class="site-header" role="banner">
+        <!-- navbar -->
+        <nav class="navbar topnav" role="navigation">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navlist">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="glyphicon fa-2x glyphicon-menu-hamburger greyfont">
+            </button>
+          </div>
+
+          <div class="navbar-collapse collapse pull-right" id="navlist">
+            <ul class="nav navbar-nav">
+              <li><a class="greyfont navfont active" href="#">About</a>  </li>
+              <li><a class="greyfont navfont active" href="#">Act</a></li>
+              <li class="dropdown active">
+                <a href="#" class="dropdown-toggle greyfont navfont" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="dropdown">Articles</a>
+                <ul class="dropdown-menu active">
+                    <li><a href="#">Environment</a></li>
+                    <li><a href="#">Social Justice</a></li>
+                    <li><a href="#">Economics</a></li>
+                    <li><a href="#">Democracy</a></li>
+                    <li><a href="#">Peace</a></li>
+                </ul>
+              </li>
+              <li><a href="#" class="greyfont navfont">Contact</a></li>
+            </ul>
+          </div>
+        <span><img src="assets/img/logo/ECFC.jpg" id="navlogo"></span>
+        </nav>
+
+
+    </header>
+
+    <!-- need plugin scrolling news with pics
+    ======================================================-->
+    <section>
+      <div class="container scrolling">
+        <img src="assets/img/gal_xx.jpg" alt="" class="upper">
+      </div>
+    </section>
+
+    <!-- call to action
+    ======================================================-->
+    <section>
+  <div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-7 left">
+          <div class="responsive">
+          <h4 id="paragraph1">Earth Charter Friends Canada is a forming group of Canadians from
+all sectors, backgrounds and areas of knowledge who share a common
+care for the well being of our community of life, and who are inspired
+by the Earth Charter. We are an Earth Charter Affiliate and we partner
+globally with other Earth Charter Friends. ECFC is affiliated with
+<a href="http://earthcharter.org/" target="_blank">ECInternational</a>.</h4></div>
+          <button type="button" name="button" class="btn btn-primary" id="subscribe">Subscribe</button>
+
+<!-- mailchimp popup -->
+          <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
+
+  <script>
+  function showMailingPopUp() {
+  require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us13.list-manage.com","uuid":"d6c813571c389304a04e960aa","lid":"169a7b6180"}) })
+  document.cookie = "MCEvilPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
+  };
+
+  document.getElementById("subscribe").onclick = function() {showMailingPopUp()};
+  </script>
+  <!-- mailchimp pop end -->
+        </div>
+
+<!-- maple wordart -->
+        <div class="col-xs-5 right">
+        </div>
+
+    </div>
+  </div>
+
+    </section>
+
+  <!--  Pillars
+    =======================================================-->
+    <section>
+      <div class="row">
+
+        <div class="col-xs-12 col-md-4 box environ">
+          <div class="layer">
+            <div class="pillartitle">
+              <h1 class="pillarword">Environment</h1>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-md-4 box social">
+          <div class="layer">
+            <div class="pillartitle">
+              <h1 class="pillarword">Social Justice</h1>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-md-4 box econ">
+          <div class="layer">
+            <div class="pillartitle">
+              <h1 class="pillarword">Economics</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12 col-md-4 box demo">
+          <div class="layer">
+            <div class="pillartitle">
+              <h1 class="pillarword">Democracy</h1>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-md-4 box peace">
+          <div class="layer">
+            <div class="pillartitle">
+              <h1 class="pillarword">Peace</h1>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-4 box events">
+          <div class="layer">
+            <div class="pillartitle">
+              <h1 class="pillarword">Events</h1>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- Footer
+    =======================================================-->
+    <footer>
+    </footer>
+
+    <!-- subscription MODAL
+    =====================================================-->
+    <div class="">
+
+    </div>
+
+
+    <!-- Bootstrap core javascript
+    ==========================================================-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.js">
+    </script>
+    <script src="assets/js/jquery-3.2.1.min.js">
+    </script>
+    <script src="assets/js/require.js">
+    </script>
+    <script src="assets/js/main.js">
+    </script>
+
+    <!-- <script>
+     // ADD SLIDEDOWN ANIMATION TO DROPDOWN //
+    $('#dropdown').on('click', function(e){
+        $(this).find('.dropdown-menu').first().stop(true, true).slideDown();
+    });
+
+    // ADD SLIDEUP ANIMATION TO DROPDOWN //
+    $('#dropdown').on('mouseleave', function(e){
+        $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
+    });
+</script> -->
+
+    <!-- typekit fonts -->
+    <!-- <script src="https://use.typekit.net/enj3myx.js"></script>
+    <script>
+        try {
+            Typekit.load({
+                async: true
+            });
+        } catch (e) {}
+    </script> -->
+
+</body>
+
+</html>

@@ -1,0 +1,190 @@
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.topnav{
+  background-color: rgba(0,99,168,0.7);
+  border-radius: 0px;
+}
+
+.greyfont{
+  color: #DEDEDE;
+}
+
+.navfont{
+  font-size: 20px;
+}
+#navlogo {
+  width: 80px;
+  height: 80px;
+  position: fixed;
+  margin-top: 10px;
+  margin-left: 50px
+}
+
+nav .navbar-collapse > ul > li > a:hover {
+  background-color: inherit !important;
+  color: white !important;
+}
+
+nav .navbar-collapse > ul > li > a:focus {
+  background-color: inherit !important;
+  color: white !important;
+}
+
+nav .navbar-collapse > ul > li > a:active {
+  background-color: inherit !important;
+  color: white !important;
+}
+
+.dropdown-menu{
+  width: 30px !important;
+}
+
+nav .navbar-collapse > ul > li > ul >li {
+  border: 0 !important;
+  height: 100% !important
+}
+
+nav .navbar-collapse > ul > li > ul >li >a {
+  color: lightgrey !important;
+}
+
+/*scrolling news*/
+.scrolling {
+  min-width: 103%;
+  margin-right: -35px;
+  margin-left: -15px;
+
+}
+.upper {
+  width: 100%;
+  max-height: 600px;
+  margin-top: -80px
+}
+
+/*call to action*/
+.left{
+  height: 300px;
+  width: 61.8% !important;
+  background: url('img/peacewater.jpg') no-repeat;
+  -webkit-background-size: 100% auto;
+  -moz-background-size: 100% auto;
+  -o-background-size: 100% auto;
+  background-size: 100% auto;
+  -webkit-filter: opacity(0.6); /* Safari 6.0 - 9.0 */
+  filter: opacity(0.6);
+}
+
+.right{
+    background-color: "papaya";
+    background-image: url('img/maple.png');
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 38.2% !important;
+    background-position: center 2px;
+    -webkit-background-size: 65% auto;
+    -moz-background-size: 65% auto;
+    -o-background-size: 65% auto;
+    background-size: 65% auto;
+    transform: rotate(-30deg);
+}
+
+#subscribe{
+  margin-top: 4%;
+  margin-left: 35%;
+  font-size: 1.5vw;
+}
+
+#paragraph1{
+  font-size: 1.5vw;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 10%;
+  text-align: justify;
+}
+
+/*pillar sections*/
+.environ{
+  height: 300px;
+  background: url('img/lighthouse.jpg') no-repeat;
+  background-position: relative;
+  -webkit-background-size: 120% auto;
+  -moz-background-size: 120% auto;
+  -o-background-size: 120% auto;
+  background-size: 120% auto;
+}
+
+.box{
+  border-color: lightgrey;
+  border-width: 10px
+}
+.layer{
+    background-color: rgba(0, 104, 167, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.pillartitle{
+  background-color: rgba(0, 99, 168, 0.63);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 20%;
+}
+
+.pillarword{
+  color: #DEDEDE;
+  line-height: 16px;
+  text-align: center;
+  font-size: 28px
+}
+
+.social{
+  height: 300px;
+  background: url('img/demo.jpg') no-repeat;
+  -webkit-background-size: 120% auto;
+  -moz-background-size: 120% auto;
+  -o-background-size: 120% auto;
+  background-size: 120% auto;
+}
+
+.econ{
+  height: 300px;
+  background: url('img/building.png') no-repeat;
+  -webkit-background-size: 200% auto;
+  -moz-background-size: 200% auto;
+  -o-background-size: 200% auto;
+  background-size: 200% auto;
+}
+
+.demo{
+  height: 300px;
+  background: url('img/happyface.jpg') no-repeat;
+  -webkit-background-size: 107% auto;
+  -moz-background-size: 107% auto;
+  -o-background-size: 107% auto;
+  background-size: 107% auto;
+}
+
+.peace{
+  height: 300px;
+  background: url('img/logo/dove.jpg') no-repeat;
+  /*-webkit-background-size: 100% auto;*/
+  /*-moz-background-size: 100% auto;
+  -o-background-size: 100% auto;*/
+  background-size: cover;
+}
+
+.events{
+  height: 300px;
+  background: url('img/events3.jpg') no-repeat;
+  -webkit-background-size: 110% auto;
+  -moz-background-size: 110% auto;
+  -o-background-size: 110% auto;
+  background-size: 110% auto;
+}

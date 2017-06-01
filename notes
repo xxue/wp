@@ -1,0 +1,17 @@
+
+bootstrap
+
+wordpress
+
+final static website:
+  assets:
+    css: customer.css
+    fonts
+    img: all img to use
+    js
+  blog.html
+...
+
+in css
+font-family: 'Lato', sans-serif;
+font-family: "proxima-nova",sans-serif;
