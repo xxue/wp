@@ -1,5 +1,7 @@
 body {
   font-family: "Lato", sans-serif;
+  width: 100%;
+  height:100%
 }
 
 .topnav{
@@ -17,7 +19,7 @@ body {
 #navlogo {
   width: 80px;
   height: 80px;
-  position: fixed;
+  position: absolute;
   margin-top: 10px;
   margin-left: 50px
 }
@@ -63,62 +65,55 @@ nav .navbar-collapse > ul > li > ul >li >a {
   margin-top: -80px
 }
 
-/*call to action*/
+/*2nd row*/
 .left{
-  height: 300px;
   width: 61.8% !important;
   background: url('img/peacewater.jpg') no-repeat;
-  -webkit-background-size: 100% auto;
-  -moz-background-size: 100% auto;
-  -o-background-size: 100% auto;
-  background-size: 100% auto;
-  -webkit-filter: opacity(0.6); /* Safari 6.0 - 9.0 */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -webkit-filter: opacity(0.6);
   filter: opacity(0.6);
 }
+a:hover, a:active, a:focus{
+  text-decoration: none;
+}
 
-.right{
-    background-color: "papaya";
-    background-image: url('img/maple.png');
-    background-repeat: no-repeat;
-    height: 300px;
+.right {
     width: 38.2% !important;
-    background-position: center 2px;
-    -webkit-background-size: 65% auto;
-    -moz-background-size: 65% auto;
-    -o-background-size: 65% auto;
-    background-size: 65% auto;
-    transform: rotate(-30deg);
+}
+
+.is-table-row {
+        display: table;
+    }
+
+.is-table-row [class*="col-"] {
+        float: none;
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+#maple{
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 #subscribe{
-  margin-top: 4%;
-  margin-left: 35%;
   font-size: 1.5vw;
+  text-align: center;
+  margin-left: 40%;
+  margin-right: 40%;
+  margin-top: -50px;
+  margin-bottom: 20%;
 }
 
-#paragraph1{
-  font-size: 1.5vw;
-  margin-left: 15%;
-  margin-right: 15%;
+.EC{
   margin-top: 10%;
-  text-align: justify;
+  background-color: transparent;
 }
 
 /*pillar sections*/
-.environ{
-  height: 300px;
-  background: url('img/lighthouse.jpg') no-repeat;
-  background-position: relative;
-  -webkit-background-size: 120% auto;
-  -moz-background-size: 120% auto;
-  -o-background-size: 120% auto;
-  background-size: 120% auto;
-}
-
-.box{
-  border-color: lightgrey;
-  border-width: 10px
-}
 .layer{
     background-color: rgba(0, 104, 167, 0.6);
     position: absolute;
@@ -126,6 +121,10 @@ nav .navbar-collapse > ul > li > ul >li >a {
     left: 0;
     width: 100%;
     height: 100%;
+}
+/*hovering to reveal picture*/
+.layer:hover{
+  background-color: rgba(0,0,0,0);
 }
 
 .pillartitle{
@@ -137,6 +136,10 @@ nav .navbar-collapse > ul > li > ul >li >a {
   height: 20%;
 }
 
+.box{
+  height: 300px;
+}
+
 .pillarword{
   color: #DEDEDE;
   line-height: 16px;
@@ -144,47 +147,116 @@ nav .navbar-collapse > ul > li > ul >li >a {
   font-size: 28px
 }
 
+.environ{
+  height: 300px;
+  background: url('img/lighthouse.jpg') no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 .social{
   height: 300px;
   background: url('img/demo.jpg') no-repeat;
-  -webkit-background-size: 120% auto;
-  -moz-background-size: 120% auto;
-  -o-background-size: 120% auto;
-  background-size: 120% auto;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .econ{
   height: 300px;
   background: url('img/building.png') no-repeat;
-  -webkit-background-size: 200% auto;
-  -moz-background-size: 200% auto;
-  -o-background-size: 200% auto;
-  background-size: 200% auto;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .demo{
   height: 300px;
   background: url('img/happyface.jpg') no-repeat;
-  -webkit-background-size: 107% auto;
-  -moz-background-size: 107% auto;
-  -o-background-size: 107% auto;
-  background-size: 107% auto;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .peace{
   height: 300px;
   background: url('img/logo/dove.jpg') no-repeat;
-  /*-webkit-background-size: 100% auto;*/
-  /*-moz-background-size: 100% auto;
-  -o-background-size: 100% auto;*/
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
 }
 
 .events{
   height: 300px;
   background: url('img/events3.jpg') no-repeat;
-  -webkit-background-size: 110% auto;
-  -moz-background-size: 110% auto;
-  -o-background-size: 110% auto;
-  background-size: 110% auto;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/*footer*/
+#site-footer{
+    height:60px;
+    background: #87AED9;
+
+}
+
+.navbar-form{
+  margin-top: 13px;
+margin-left: 30px
+}
+.fa-icon{
+  color: white;
+  font-size: 24px;
+}
+
+.fa-circle{
+  /*color: #d8d8d8;*/
+  color: #bfbfbf;
+}
+
+#footerECIlogo{
+  height: 50px;
+  width: auto;
+
+}
+
+.bottomlinks{
+  margin-top: 18px;
+  font-size: 16px;
+}
+
+.bottomsocial{
+  margin-top: 7px;
+  margin-right: 20px
+}
+
+.bottomlinks >li > a{
+  color: #eaeaea;
+}
+
+.bottomlinks >li > a:hover {
+  background-color: inherit !important;
+  color: white !important;
+  text-decoration: none;
+
+}
+
+.bottomlinks >li > a:focus {
+  background-color: inherit !important;
+  color: white !important;
+  text-decoration: none;
+}
+
+.bottomlinks >li > a:active {
+  background-color: inherit !important;
+  color: white !important;
+  text-decoration: none;
 }

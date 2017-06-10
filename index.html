@@ -4,8 +4,8 @@
 <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="assets/img/logo/ECFC.jpg">
@@ -29,6 +29,7 @@
 
 
 <body>
+
     <header class="site-header" role="banner">
         <!-- navbar -->
         <nav class="navbar topnav" role="navigation">
@@ -73,47 +74,36 @@
     <!-- call to action
     ======================================================-->
     <section>
-  <div class="container-fluid">
-    <div class="row">
+<div class="container-fluid">
+    <div class="row text-center is-table-row">
+
         <div class="col-xs-7 left">
-          <div class="responsive">
-          <h4 id="paragraph1">Earth Charter Friends Canada is a forming group of Canadians from
-all sectors, backgrounds and areas of knowledge who share a common
-care for the well being of our community of life, and who are inspired
-by the Earth Charter. We are an Earth Charter Affiliate and we partner
-globally with other Earth Charter Friends. ECFC is affiliated with
-<a href="http://earthcharter.org/" target="_blank">ECInternational</a>.</h4></div>
-          <button type="button" name="button" class="btn btn-primary" id="subscribe">Subscribe</button>
+          <div class="jumbotron EC">
+            <p style="font-size: 14px;">Earth Charter Friends Canada is a forming group of Canadians from all sectors, backgrounds and areas of knowledge who share a common care for the well being of our community of life, and who are inspired by the Earth Charter. We are an Earth Charter
+            Affiliate and we partner globally with other Earth Charter Friends. ECFC is affiliated with
+            <a href="http://earthcharter.org/" target="_blank" class="EClink">ECInternational</a>.</p>
+          </div>
 
-<!-- mailchimp popup -->
-          <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
+          <button type="button" name="button" class="btn btn-primary" id="open-popup">Subscribe</button>
+          <!-- mailchimp popup after footer -->
 
-  <script>
-  function showMailingPopUp() {
-  require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us13.list-manage.com","uuid":"d6c813571c389304a04e960aa","lid":"169a7b6180"}) })
-  document.cookie = "MCEvilPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
-  };
-
-  document.getElementById("subscribe").onclick = function() {showMailingPopUp()};
-  </script>
-  <!-- mailchimp pop end -->
-        </div>
+</div>
 
 <!-- maple wordart -->
-        <div class="col-xs-5 right">
-        </div>
-
+    <div class="col-xs-5 right">
+        <img src="assets/img/maplewhite.jpg" alt="" class="img-responsive center-block" id="maple">
+    </div>
     </div>
   </div>
-
     </section>
 
   <!--  Pillars
     =======================================================-->
     <section>
+    <div class="container-fluid lower">
       <div class="row">
-
         <div class="col-xs-12 col-md-4 box environ">
+            <!-- <img src="assets/img/lighthouse.jpg" alt="" class="img-responsive"> -->
           <div class="layer">
             <div class="pillartitle">
               <h1 class="pillarword">Environment</h1>
@@ -163,32 +153,104 @@ globally with other Earth Charter Friends. ECFC is affiliated with
         </div>
 
       </div>
+        </div>
 
     </section>
 
+
     <!-- Footer
     =======================================================-->
-    <footer>
-    </footer>
+<footer id="site-footer">
+      <div class="row">
+            <!-- search at bottom -->
+            <div class="col-xs-4">
+              <form class="navbar-form" role="search">
+                  <div class="input-group add-on">
+                      <input class="form-control" placeholder="Search" name="srch-term" id="srch-term" type="text">
+                      <div class="input-group-btn">
+                          <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                      </div>
+                  </div>
+              </form>
+            </div>
 
-    <!-- subscription MODAL
-    =====================================================-->
-    <div class="">
+            <div class="col-xs-4 text-center">
+                <ul class="list-inline bottomlinks">
+                  <li class="list-inline-item" ><a href="http://earthcharter.org/discover/history-of-the-earth-charter/" target="_blank">History of EC</a></li>
+                        <li class="list-inline-item"><a href="http://earthcharter.org/discover/the-earth-charter/" target="_blank">Read the Charter</a></li>
+                              <li class="list-inline-item">  <a href="http://earthcharter.org/endorse/" target="_blank">Endorse</a></li>
+                </ul>
+              </div>
 
-    </div>
+
+<!-- social media and ECInternationa links in footer -->
+            <div class="col-xs-4">
+
+              <div class="pull-right bottomsocial">
+                    <ul class="list-inline">
+                      <li class="list-inline-item">
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                            <a href="https://www.facebook.com/EarthCharterCanada/" target="_blank"><i class="fa fa-icon fa-facebook fa-stack-1x"></i></a>
+                        </span>
+                      </li>
+
+                        <li class="list-inline-item">
+                          <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                              <a href="https://twitter.com/ecfcanada" target="_blank"><i class="fa fa-icon fa-twitter fa-stack-1x"></i></a>
+                            </span>
+                        </li>
+
+                        <li class="list-inline-item">
+                          <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                              <a href="https://www.instagram.com/ecfcanada/?hl=en" target="_blank"><i class="fa fa-icon fa-instagram fa-stack-1x"></i></a>
+                          </span>
+                        </li>
+
+                          <li class="list-inline-item">
+                            <a href="http://earthcharter.org/" target="_blank"><img src="assets/img/logo/ECI.jpg" id="footerECIlogo"></a></li>
+
+                    </ul>
+                  </div>
+<!-- social media ends -->
+
+            </div>
+
+
+      </div>
+</footer>
+
+<!-- pop up will only work on live server   -->
+            <!-- mailchimp popup -->
+            <script type="text/javascript" src="http://s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
+
+            <script>
+            function showMailingPopUp() {
+                require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us11.list-manage.com","uuid":"d6c813571c389304a04e960aa","lid":"169a7b6180"}) })
+                document.cookie = "MCEvilPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
+            };
+
+            document.getElementById("open-popup").onclick = function() {showMailingPopUp()};
+            </script>
+            <!-- mailchimp pop end -->
 
 
     <!-- Bootstrap core javascript
     ==========================================================-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="assets/js/jquery-3.2.1.min.js">
+    </script>
     <script src="assets/js/bootstrap.js">
     </script>
-    <script src="assets/js/jquery-3.2.1.min.js">
+    <script src="assets/js/tether.min.js">
     </script>
     <script src="assets/js/require.js">
     </script>
     <script src="assets/js/main.js">
     </script>
+    <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.0/jquery.matchHeight-min.js"></script> -->
 
     <!-- <script>
      // ADD SLIDEDOWN ANIMATION TO DROPDOWN //
@@ -201,16 +263,6 @@ globally with other Earth Charter Friends. ECFC is affiliated with
         $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
     });
 </script> -->
-
-    <!-- typekit fonts -->
-    <!-- <script src="https://use.typekit.net/enj3myx.js"></script>
-    <script>
-        try {
-            Typekit.load({
-                async: true
-            });
-        } catch (e) {}
-    </script> -->
 
 </body>
 
