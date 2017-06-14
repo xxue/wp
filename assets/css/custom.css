@@ -1,4 +1,4 @@
-body {
+html, body {
   font-family: "Lato", sans-serif;
   width: 100%;
   height:100%
@@ -27,6 +27,7 @@ body {
 nav .navbar-collapse > ul > li > a:hover {
   background-color: inherit !important;
   color: white !important;
+  font-weight: bold
 }
 
 nav .navbar-collapse > ul > li > a:focus {
@@ -49,7 +50,13 @@ nav .navbar-collapse > ul > li > ul >li {
 }
 
 nav .navbar-collapse > ul > li > ul >li >a {
-  color: lightgrey !important;
+  color: #a5a5a5 !important;
+}
+
+@media only screen and (max-width: 767px){
+  nav .navbar-collapse > ul > li > ul >li >a {
+    color: lightgrey !important;
+  }
 }
 
 /*scrolling news*/
@@ -62,56 +69,9 @@ nav .navbar-collapse > ul > li > ul >li >a {
 .upper {
   width: 100%;
   max-height: 600px;
-  margin-top: -80px
+  margin-top: -100px
 }
 
-/*2nd row*/
-.left{
-  width: 61.8% !important;
-  background: url('img/peacewater.jpg') no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  -webkit-filter: opacity(0.6);
-  filter: opacity(0.6);
-}
-a:hover, a:active, a:focus{
-  text-decoration: none;
-}
-
-.right {
-    width: 38.2% !important;
-}
-
-.is-table-row {
-        display: table;
-    }
-
-.is-table-row [class*="col-"] {
-        float: none;
-        display: table-cell;
-        vertical-align: middle;
-    }
-
-#maple{
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-#subscribe{
-  font-size: 1.5vw;
-  text-align: center;
-  margin-left: 40%;
-  margin-right: 40%;
-  margin-top: -50px;
-  margin-bottom: 20%;
-}
-
-.EC{
-  margin-top: 10%;
-  background-color: transparent;
-}
 
 /*pillar sections*/
 .layer{
@@ -149,7 +109,7 @@ a:hover, a:active, a:focus{
 
 .environ{
   height: 300px;
-  background: url('img/lighthouse.jpg') no-repeat;
+  background: url('../img/lighthouse.jpg') no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -158,7 +118,7 @@ a:hover, a:active, a:focus{
 
 .social{
   height: 300px;
-  background: url('img/demo.jpg') no-repeat;
+  background: url('../img/demo.jpg') no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -167,7 +127,7 @@ a:hover, a:active, a:focus{
 
 .econ{
   height: 300px;
-  background: url('img/building.png') no-repeat;
+  background: url('../img/building.png') no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -176,7 +136,7 @@ a:hover, a:active, a:focus{
 
 .demo{
   height: 300px;
-  background: url('img/happyface.jpg') no-repeat;
+  background: url('../img/happyface.jpg') no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -185,7 +145,7 @@ a:hover, a:active, a:focus{
 
 .peace{
   height: 300px;
-  background: url('img/logo/dove.jpg') no-repeat;
+  background: url('../img/logo/dove.jpg') no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -194,7 +154,7 @@ a:hover, a:active, a:focus{
 
 .events{
   height: 300px;
-  background: url('img/events3.jpg') no-repeat;
+  background: url('../img/events3.jpg') no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -203,14 +163,13 @@ a:hover, a:active, a:focus{
 
 /*footer*/
 #site-footer{
-    height:60px;
+    min-height:60px;
     background: #87AED9;
-
 }
 
 .navbar-form{
   margin-top: 13px;
-margin-left: 30px
+  margin-left: 5px
 }
 .fa-icon{
   color: white;
@@ -235,7 +194,7 @@ margin-left: 30px
 
 .bottomsocial{
   margin-top: 7px;
-  margin-right: 20px
+  margin-right: 5px
 }
 
 .bottomlinks >li > a{
@@ -259,4 +218,102 @@ margin-left: 30px
   background-color: inherit !important;
   color: white !important;
   text-decoration: none;
+}
+
+/*===============ENVIRONMENT BLOG===============================*/
+.environtop {
+  min-height: 380px;
+  max-height: 450px;
+  width: 100%;
+  margin: -90px 0 auto 0;
+  background: url('../img/peacewater.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  /*opacity: 0.6*/
+}
+
+.blogwordcolor{
+    color: #737373;
+}
+.pillarblogtitle{
+  font-size: 30px;
+  margin: 120px 0 0 100px;
+  font-weight: bold
+}
+
+.bloguppersentence{
+  font-size: 16px;
+  margin: 0 0 50px 100px;
+}
+
+.bloglogo{
+margin: 80px auto auto auto;
+max-height: 400px;
+align-content: center;
+}
+
+#demologo{
+  margin: 30px auto auto auto;
+  max-height: 220px;
+  align-content: center;
+}
+
+#econlogo{
+  margin: 30px auto auto auto;
+  max-height: 240px;
+  align-content: center;
+  border-radius: 50%
+}
+
+.haiku1{
+  font-size: 16px;
+  margin-top: 80px
+}
+
+.haiku2{
+  font-size: 20px;
+}
+
+.haiku3{
+  font-size: 15px;
+}
+
+.blogsection{
+  margin-top: 50px
+
+}
+.classWithPad{
+  background-color: #EEEEEE;
+  margin:5px;
+  padding:5px;
+}
+
+.blogupper{
+  max-height: 180px;
+}
+
+.blogpic{
+  min-width: 100%;
+  min-height: 180px;
+  max-height: 180px;
+}
+
+.blogrow{
+  margin-bottom: 30px;
+}
+
+.blogtitle > a{
+  color: grey;
+  font-size: 20px
+}
+
+.blogtitle > a:hover{
+  color: #545353;
+}
+
+.blogsummary{
+  color: grey;
+  font-size: 15px
 }

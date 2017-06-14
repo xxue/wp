@@ -41,13 +41,13 @@
 
           <div class="navbar-collapse collapse pull-right" id="navlist">
             <ul class="nav navbar-nav">
-              <!-- <li><a class="greyfont navfont active" href="#">About</a>  </li> -->
-
+              <li><a class="greyfont navfont active" href="#">About</a>  </li>
               <li class="dropdown active">
-                <a href="#" class="dropdown-toggle greyfont navfont" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About</a>
+                <a href="#" class="dropdown-toggle greyfont navfont" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="dropdown">Articles</a>
                 <ul class="dropdown-menu active">
                     <li><a href="http://earthcharter.org/" target="_blank" class="EClink">ECInternational</a></li>
                     <li><a href="ecfcteam.html">ECFC</a></li>
+
                 </ul>
               </li>
 
@@ -72,7 +72,7 @@
 
     </header>
 
-    <!-- static pic with tagline
+    <!-- need plugin scrolling news with pics
     ======================================================-->
     <section>
       <div class="container scrolling">
@@ -83,7 +83,31 @@
       </div>
     </section>
 
+    <!-- call to action
+    ======================================================-->
+    <section>
+<div class="container-fluid">
+    <div class="row text-center is-table-row">
 
+        <div class="col-xs-7 left">
+          <div class="jumbotron EC">
+            <p style="font-size: 14px;">Earth Charter Friends Canada is a forming group of Canadians from all sectors, backgrounds and areas of knowledge who share a common care for the well being of our community of life, and who are inspired by the Earth Charter. We are an Earth Charter
+            Affiliate and we partner globally with other Earth Charter Friends. ECFC is affiliated with
+            <a href="http://earthcharter.org/" target="_blank" class="EClink">ECInternational</a>.</p>
+          </div>
+
+          <button type="button" name="button" class="btn btn-primary" id="open-popup">Subscribe</button>
+          <!-- mailchimp popup after footer -->
+
+</div>
+
+<!-- maple wordart -->
+    <div class="col-xs-5 right">
+        <img src="assets/img/maplewhite.jpg" class="img-responsive center-block" id="maple">
+    </div>
+    </div>
+  </div>
+    </section>
 
   <!--  Pillars
     =======================================================-->
@@ -152,7 +176,7 @@
   <div class="container">
 
             <!-- search at bottom -->
-            <div class="col-xs-4 col-sm-3 col-md-3">
+            <div class="col-sm-4">
               <form class="navbar-form" role="search">
                   <div class="input-group add-on">
                       <input class="form-control" placeholder="Search" name="srch-term" id="srch-term" type="text">
@@ -163,13 +187,12 @@
               </form>
             </div>
 
-            <div class="col-xs-8 col-sm-5 col-md-5 text-right">
+            <div class="col-sm-4 text-center">
               <nav>
                 <ul class="list-inline list-unstyled bottomlinks">
                   <li class="list-inline-item" ><a href="http://earthcharter.org/discover/history-of-the-earth-charter/" target="_blank">History of EC</a></li>
                         <li class="list-inline-item"><a href="http://earthcharter.org/discover/the-earth-charter/" target="_blank">Read the Charter</a></li>
                               <li class="list-inline-item">  <a href="http://earthcharter.org/endorse/" target="_blank">Endorse</a></li>
-                              <li class="list-inline-item" ><a href="#" target="_blank">Subscribe</a></li>
 
                 </ul>
 
@@ -179,7 +202,7 @@
 
 
 <!-- social media and ECInternationa links in footer -->
-            <div class="col-xs-12 col-sm-4 col-md-4 ">
+            <div class="col-sm-4">
 
               <div class="pull-right bottomsocial">
                     <ul class="list-inline">
@@ -217,6 +240,19 @@
         </div>
 </footer>
 
+<!-- pop up will only work on live server   -->
+            <!-- mailchimp popup -->
+            <script type="text/javascript" src="http://s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
+
+            <script>
+            function showMailingPopUp() {
+                require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us11.list-manage.com","uuid":"d6c813571c389304a04e960aa","lid":"169a7b6180"}) })
+                document.cookie = "MCEvilPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
+            };
+
+            document.getElementById("open-popup").onclick = function() {showMailingPopUp()};
+            </script>
+            <!-- mailchimp pop end -->
 
 
     <!-- Bootstrap core javascript
