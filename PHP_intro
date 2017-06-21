@@ -5,6 +5,28 @@
     <title></title>
   </head>
   <body>
+
+    <?php get_header(); ?>
+    <?php get_footer(); ?>
+
+
+<body <?php body_class();?> >
+
+  <?php
+  if( have_posts() ):
+  while(have_posts() ): the_post(); ?>
+  <?php get_template_part('content', get_post_format()); ?>
+
+
+  <h3><?php the_title(); ?></h3>
+  By <?php the_author(); ?> <?php the_time('F j, Y'); ?>
+
+  <div class="entry">
+   		<?php the_content(); ?>
+   	</div>
+
+
+
     <?php
 
     echo "<p>\"published on \"</>";

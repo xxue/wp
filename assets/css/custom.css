@@ -3,7 +3,7 @@ html, body {
   width: 100%;
   height:100%
 }
-
+/*======nav======================================*/
 .topnav{
   background-color: rgba(0,99,168,0.7);
   border-radius: 0px;
@@ -58,112 +58,13 @@ nav .navbar-collapse > ul > li > ul >li >a {
     color: lightgrey !important;
   }
 }
+/****************end of nav*************************/
 
-/*scrolling news*/
-.scrolling {
-  min-width: 103%;
-  margin-right: -35px;
-  margin-left: -15px;
-
-}
-.upper {
-  width: 100%;
-  max-height: 600px;
-  margin-top: -100px
-}
-
-
-/*pillar sections*/
-.layer{
-    background-color: rgba(0, 104, 167, 0.6);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-/*hovering to reveal picture*/
-.layer:hover{
-  background-color: rgba(0,0,0,0);
-}
-
-.pillartitle{
-  background-color: rgba(0, 99, 168, 0.63);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 20%;
-}
-
-.box{
-  height: 300px;
-}
-
-.pillarword{
-  color: #DEDEDE;
-  line-height: 16px;
-  text-align: center;
-  font-size: 28px
-}
-
-.environ{
-  height: 300px;
-  background: url('../img/lighthouse.jpg') no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-.social{
-  height: 300px;
-  background: url('../img/demo.jpg') no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-.econ{
-  height: 300px;
-  background: url('../img/building.png') no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-.demo{
-  height: 300px;
-  background: url('../img/happyface.jpg') no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-.peace{
-  height: 300px;
-  background: url('../img/logo/dove.jpg') no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-.events{
-  height: 300px;
-  background: url('../img/events3.jpg') no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-/*footer*/
+/*========footer========================================================*/
 #site-footer{
+  position: sticky;
     min-height:60px;
+    max-height: 120px;
     background: #87AED9;
 }
 
@@ -219,19 +120,177 @@ nav .navbar-collapse > ul > li > ul >li >a {
   color: white !important;
   text-decoration: none;
 }
+/****************end of footer****************/
 
-/*===============ENVIRONMENT BLOG===============================*/
-.environtop {
-  min-height: 380px;
-  max-height: 450px;
+/*==============index.html static top picture=================*/
+.scrolling {
+  max-height: 700px;
+}
+
+.homelake{
+  height: 100vh;
+  width: 100vw;
+  margin: -87px auto auto -30px;
+  float: left;
+}
+
+/*being more, not having more*/
+.tagline{
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 20vh;
+  width: 35vw;
+  margin-top: 50vh;
+  /*top: -40vh;*/
+  left: 56vw;
+  border-radius: 6px
+}
+
+.tagline h3{
+  margin-top: -3%;
+  position: absolute;
+  left: 3vw;
+  font-size:30px;
+  font-family: 'Josefin Sans', sans-serif;
+  color: lightgrey;
+}
+
+@media screen and (max-width: 768px){
+  .jumbotron h3{
+    font-size:22px;
+  }
+
+  .tagline{
+    height: 16vh;
+    width: 40vw;
+    margin-top: 50vh;
+    /*top: -40vh;*/
+    left: 30vw;
+  }
+}
+/****************end of index.html static top pic************/
+
+/*==============pillar sections=============================*/
+.layer{
+    background-color: rgba(0, 104, 167, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+/*hovering to reveal picture*/
+.layer:hover{
+  background-color: rgba(0,0,0,0);
+}
+
+/*titles*/
+.pillartitle{
+  background-color: rgba(0, 99, 168, 0.63);
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  margin: -90px 0 auto 0;
-  background: url('../img/peacewater.jpg');
+  height: 20%;
+}
+
+.box{
+  height: 300px;
+}
+
+.pillarword{
+  color: #DEDEDE;
+  line-height: 16px;
+  text-align: center;
+  font-size: 28px
+}
+
+/*each pillar with a different background pic*/
+.environ{
+  height: 300px;
+  background: url('../img/lighthouse.jpg') no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  /*opacity: 0.6*/
+}
+
+.social{
+  height: 300px;
+  background: url('../img/demo.jpg') no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.econ{
+  height: 300px;
+  background: url('../img/building.png') no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.demo{
+  height: 300px;
+  background: url('../img/happyface.jpg') no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.peace{
+  height: 300px;
+  background: url('../img/logo/dove.jpg') no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.events{
+  height: 300px;
+  background: url('../img/events3.jpg') no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/***************end of pillar section**************************/
+
+
+/*===============ENVIRONMENT BLOG===============================*/
+
+/*top with pillar title, logo and haiku*/
+.blogtop {
+  min-height: 380px;
+  max-height: 450px;
+  width: 100%;
+  margin: -90px 0 auto 0;
+  background: url('../img/peacewater.jpg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 767px){
+  .blogtop {
+    min-height: 900px;
+    width: 100%;
+    height: 100%;
+    margin: -90px 0 auto 0;
+    background: url('../img/peacewater.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
 }
 
 .blogwordcolor{
@@ -248,21 +307,37 @@ nav .navbar-collapse > ul > li > ul >li >a {
   margin: 0 0 50px 100px;
 }
 
-.bloglogo{
-margin: 80px auto auto auto;
-max-height: 400px;
-align-content: center;
+/*different logos*/
+#environlogo{
+  margin: 90px auto auto auto;
+  max-height: 220px;
+  align-content: center;
+  border-radius: 50%
 }
 
 #demologo{
-  margin: 30px auto auto auto;
+  margin: 90px auto auto auto;
   max-height: 220px;
   align-content: center;
 }
 
 #econlogo{
-  margin: 30px auto auto auto;
-  max-height: 240px;
+  margin: 90px auto auto auto;
+  max-height: 220px;
+  align-content: center;
+  border-radius: 50%
+}
+
+#sologo{
+  margin: 90px auto auto auto;
+  max-height: 220px;
+  align-content: center;
+  border-radius: 50%
+}
+
+#peacelogo{
+  margin: 90px auto auto auto;
+  max-height: 220px;
   align-content: center;
   border-radius: 50%
 }
@@ -279,10 +354,180 @@ align-content: center;
 .haiku3{
   font-size: 15px;
 }
+/*********end of top part of each pillar page********************/
 
+/*===================act.html===================================*/
+
+/*act upper part*/
+.act{
+  background: url("../img/peacewater.jpg") no-repeat center center fixed;
+  height: 200vh;
+  width: 99.6vw;
+  margin: -20vh auto auto -10px
+}
+
+.actuppertext {
+  position: relative;
+  background:none;
+  height: 20vh;
+  width: 35vw;
+  margin-top: 60vh;
+  /*top: -40vh;*/
+  left: 56vw;
+  border-radius: 6px;
+}
+
+.actuppertext h3{
+  margin-top: -40vh;
+  position: absolute;
+  left: -120%;
+  font-size:40px;
+  font-family: 'Josefin Sans', sans-serif;
+  color: grey;
+  font-weight: bold;
+}
+
+.actuppertext p{
+  margin-top: -20vh;
+  position: absolute;
+  left: -120%;
+  font-size:25px;
+  font-family: 'Josefin Sans', sans-serif;
+  color: grey;
+}
+
+@media only screen and (max-width: 767px){
+  .actuppertext h3{
+    margin-top: -40vh;
+    position: absolute;
+    left: -120%;
+    font-size:28px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: grey;
+    font-weight: bold;
+  }
+
+  .actuppertext p{
+    margin-top: -26vh;
+    position: absolute;
+    left: -120%;
+    font-size:20px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: grey;
+  }
+}
+
+/*act middle */
+.colwithpad{
+  max-width: 100%;
+  min-height: 300px;
+  padding: 10px 2vw 20px 2vw
+}
+
+.rowwithpad{
+  margin: auto 2vw auto 10vw
+}
+.actmidtext{
+  position: relative;
+  background-color: rgba(20, 140, 229, 0.25);
+  height: 40vh;
+  border-radius: 30px;
+}
+
+.actmidtext h3{
+  margin-top: -20px;
+  font-size:22px;
+  font-family: 'Josefin Sans', sans-serif;
+  color: grey;
+  font-weight: bold;
+}
+
+/*act lower panel: share your story*/
+.actlowertext{
+  position: relative;
+  background: none;
+  height: 10vh;
+  width: 95vw;
+}
+
+.actlowertext p{
+  margin-top: 10vh;
+  position: absolute;
+  left: 12vw;
+  font-size:25px;
+  font-family: 'Josefin Sans', sans-serif;
+  color: grey;
+}
+/***********end of act.html****************************************/
+
+/*=========team ECFC===============================================*/
+.team{
+  height: 1000px;
+  width:95vw;
+  margin-top: 10vh;
+  margin-left: 5vw
+}
+
+.teamfont{
+  color: grey;
+  margin-left: 12vw;
+  margin-bottom: 10vh
+}
+
+/*test with square*/
+.square {
+  position: relative;
+  width: 23%;
+  display: inline-flex;
+  margin-right: -3.8px;
+  margin-bottom: -15px
+}
+
+.square:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+/*test with square ends*/
+
+.ecfc-dark-layer:hover{
+  background-color: rgba(0,0,0,0);
+}
+
+.ecfc-light-layer:hover{
+  background-color: rgba(0,0,0,0);
+}
+
+.ecfc-dark-layer{
+  background-color: rgba(44, 115, 181, 0.78);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.ecfc-light-layer{
+  background-color:rgba(138, 187, 228, 0.82);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+/***********end of team ECFC****************************************/
+
+/*=========post.html===============================================*/
 .blogsection{
   margin-top: 50px
-
 }
 .classWithPad{
   background-color: #EEEEEE;
@@ -316,4 +561,54 @@ align-content: center;
 .blogsummary{
   color: grey;
   font-size: 15px
+}
+
+/*actual post*/
+.inner-wrap{
+  margin: 20vh 11vw auto 11vw
+
+}
+.entry-title{
+ font-weight: bold;
+ margin-top: 10vh;
+ /*margin-left: 1vw*/
+}
+
+.post-author a{
+  font-size: 18px;
+  color: grey
+}
+
+.date-updated{
+  font-size: 18px;
+  color: grey
+}
+
+.separator{
+  color: #e5e5e5;
+  font-size: 15px;
+  margin: 0
+}
+
+.scrolling-pic{
+  position: inherit;
+  max-width: 60vw;
+  max-height: 80vh
+}
+
+span.dropcap{
+  display: inline;
+    float: left;
+    margin: 0;
+    padding: .25em .08em 0 0;
+    _padding: 0.25em 0.08em 0.4em 0.00em;
+    font-size: 3.2em;
+    line-height: .4em;
+    text-transform: capitalize;
+    color: #000;
+    font-family: Georgia, Times New Romans, Trebuchet MS, Lucida Grande;
+}
+
+.entry-text{
+  max-width: 60vw;
 }

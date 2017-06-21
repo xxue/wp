@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="assets/css/font-awesome/css/font-awesome.min.css" >
     <!-- google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/custom.css">
 </head>
 
@@ -41,32 +42,42 @@
 
           <div class="navbar-collapse collapse pull-right" id="navlist">
             <ul class="nav navbar-nav">
-              <li><a class="greyfont navfont active" href="#">About</a>  </li>
-              <li><a class="greyfont navfont active" href="#">Act</a></li>
+              <!-- <li><a class="greyfont navfont active" href="#">About</a>  </li> -->
+
+              <li class="dropdown active">
+                <a href="#" class="dropdown-toggle greyfont navfont" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About</a>
+                <ul class="dropdown-menu active">
+                    <li><a href="http://earthcharter.org/" target="_blank" class="EClink">ECInternational</a></li>
+                    <li><a href="ecfcteam.html">ECFC</a></li>
+                </ul>
+              </li>
+
+
+              <li><a class="greyfont navfont active" href="act.html">Act</a></li>
               <li class="dropdown active">
                 <a href="#" class="dropdown-toggle greyfont navfont" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="dropdown">Articles</a>
                 <ul class="dropdown-menu active">
-                  <li><a href="environment.html">Environment</a></li>
-                  <li><a href="social.html">Social Justice</a></li>
-                  <li><a href="economics.html">Economics</a></li>
-                  <li><a href="democracy.html">Democracy</a></li>
-                  <li><a href="peace.html">Peace</a></li>
+                    <li><a href="environment.html">Environment</a></li>
+                    <li><a href="social.html">Social Justice</a></li>
+                    <li><a href="economics.html">Economics</a></li>
+                    <li><a href="democracy.html">Democracy</a></li>
+                    <li><a href="peace.html">Peace</a></li>
                 </ul>
               </li>
               <li><a href="#" class="greyfont navfont">Contact</a></li>
             </ul>
           </div>
-        <span><img src="assets/img/logo/ECFC.jpg" id="navlogo"></span>
+          <span><a href="../index.html"><img src="assets/img/logo/ECFC.jpg" id="navlogo"></a></span>
         </nav>
 
 
     </header>
 
-<!-- environment top -->
+<!-- demo top -->
 <section>
-  <div class="container-fluid environtop">
+  <div class="container-fluid blogtop">
     <div class="col-sm-4 col-xs-12">
-    <h1 class="pillarblogtitle blogwordcolor">Democracy</h1><br>
+    <h1 class="pillarblogtitle blogwordcolor">democracy</h1><br>
     <p class="text-justify blogwordcolor bloguppersentence">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse rutrum nunc et ante. </p>
     </div>
 
